@@ -1,3 +1,12 @@
+<!--
+ * @Author: Dongliang Ma
+ * @Date: 2023-03-12 10:03:03
+ * @LastEditTime: 2023-03-13 10:02:08
+ * @LastEditors: Dongliang Ma
+ * @Description: 一个常用的可视化论文图标库
+ * @GitHub: https://github.com/xianghui-ma
+ * @Email: ma_dong_liang@163.com
+-->
 <h2 align="center">sciUi</h2>
 
 ### 背景
@@ -18,5 +27,13 @@
 - 常用交互组件
 - 系统样式
 
-### 效果演示
+### 技术栈
+***
+
+- React
+- Rollup
+- Styled-components (CIJ)
+- Redux
+
+### 组件展示
 ***
