@@ -16,5 +16,5 @@ export default{
         format: 'cjs'
     },
     plugins: [babel()],
-    external: ['react']
+    external: ['react', 'prop-types']
 }
