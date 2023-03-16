@@ -1,16 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SciLayout() {
+import {divideViewArea} from './SciLayoutLogic.js';
+
+function SciLayout(props) {
   return (
-    <section></section>
-  )
+    <section style={divideViewArea(props)}></section>
+  );
 }
 
+// 属性类型和必要性限制
 SciLayout.propTypes = {
-    rows: PropTypes.number,
-    columns: PropTypes.number,
-    
+    // 将页面划分为多少行
+    rows: PropTypes.number.isRequired,
+    // 将页面划分为多少列
+    columns: PropTypes.number.isRequired,
+    // 网格间距，默认值为1px
+    gap: PropTypes.string,
+    // 划定区域，并给区域取名
+    // {areaName: '起始行/终止行/起始列/终止列'}
+    areas: PropTypes.object.isRequired
 }
 
 export default SciLayout;
