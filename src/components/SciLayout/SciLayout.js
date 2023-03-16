@@ -5,7 +5,9 @@ import {divideViewArea} from './SciLayoutLogic.js';
 
 function SciLayout(props) {
   return (
-    <section style={divideViewArea(props)}></section>
+    <section style={divideViewArea(props)}>
+      {props.children}
+    </section>
   );
 }
 
@@ -20,8 +22,8 @@ SciLayout.propTypes = {
     // 网格间隔线条的颜色，默认#ccc
     bgColor: PropTypes.string,
     // 划定区域，并给区域取名
-    // {areaName: '起始行/终止行/起始列/终止列'}
+    // {areaName: '起始行/终止行-起始列/终止列'}
     areas: PropTypes.object.isRequired
-}
+};
 
 export default SciLayout;

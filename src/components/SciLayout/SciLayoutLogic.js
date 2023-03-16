@@ -1,7 +1,6 @@
-
 export const divideViewArea = (props)=>{
     const {rows, columns, gap, bgColor} = props;
-    return style = {
+    return {
         width: '100vw',
         height: '100vh',
         display: 'grid',
