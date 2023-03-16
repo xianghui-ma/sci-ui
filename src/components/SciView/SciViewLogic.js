@@ -1,7 +1,8 @@
 export const setViewPosition = (props)=>{
-    const {position} = props;
-    // return {
-    //     gridColumn: 1 / 2,
-    //     gridRow: 3 / 5,
-    // }
+    let {position} = props;
+    position = position.split('/');
+    return {
+        gridColumn: `${Number(position[2])} / ${Number(position[3]) + 1}`,
+        gridRow: `${Number(position[0])} / ${Number(position[1]) + 1}`,
+    }
 }
