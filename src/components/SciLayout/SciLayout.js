@@ -17,6 +17,8 @@ SciLayout.propTypes = {
     columns: PropTypes.number.isRequired,
     // 网格间距，默认值为1px
     gap: PropTypes.string,
+    // 网格间隔线条的颜色，默认#ccc
+    bgColor: PropTypes.string,
     // 划定区域，并给区域取名
     // {areaName: '起始行/终止行/起始列/终止列'}
     areas: PropTypes.object.isRequired
