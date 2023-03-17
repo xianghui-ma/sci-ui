@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default function SciHeader() {
+export default function SciHeader(props) {
   return (
-    <div>SciHeader</div>
-  )
+    <header>
+      {props.children}
+    </header>
+  );
 }

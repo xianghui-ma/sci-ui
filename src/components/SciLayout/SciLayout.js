@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {divideViewArea} from './SciLayoutLogic.js';
+import {divideViewArea, setTitle} from './SciLayoutLogic.js';
 
 function SciLayout(props) {
   return (
-    <section style={divideViewArea(props)}>
-      {props.children}
+    <section>
+      {setTitle(props)}
+      <section style={divideViewArea(props)}>
+        {props.children}
+      </section>
     </section>
   );
 }
@@ -20,7 +23,17 @@ SciLayout.propTypes = {
     // 网格间距，默认值为1px
     gap: PropTypes.string,
     // 网格间隔线条的颜色，默认#ccc
-    bgColor: PropTypes.string
+    gapColor: PropTypes.string,
+    // 是否需要Title
+    title: PropTypes.string,
+    // title高度，输入为百分比
+    titleHeight: PropTypes.string,
+    // title文本位置，值有left | center | right，默认center
+    titlePosition: PropTypes.string,
+    // title背景颜色，默认#ccc
+    titleBgColor: PropTypes.string,
+    // title文本颜色，默认#000
+    titleColor: PropTypes.string
 };
 
 export default SciLayout;
