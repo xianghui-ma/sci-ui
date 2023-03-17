@@ -1,7 +1,8 @@
 import React from 'react';
 
+// 设置系统title
 export const setTitle = (props)=>{
-    const {title, titleHeight, titlePosition, titleBgColor, titleColor, titleFontSize} = props;
+    const {title, titlePosition, titleBgColor, titleColor, titleFontSize} = props;
     return (
         title ? <h1 style={{
             textAlign: titlePosition || 'center',
@@ -13,8 +14,9 @@ export const setTitle = (props)=>{
     );
 }
 
+// grid布局网格划分
 export const divideViewArea = (props)=>{
-    const {rows, columns, gap, gapColor, titleHeight, title} = props;
+    const {rows, columns, gap, gapColor} = props;
     return {
         height: '100%',
         display: 'grid',

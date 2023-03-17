@@ -28,8 +28,6 @@ SciLayout.propTypes = {
     gapColor: PropTypes.string,
     // 是否需要Title
     title: PropTypes.string,
-    // title高度，输入为百分比
-    titleHeight: PropTypes.string,
     // title文本位置，值有left | center | right，默认center
     titlePosition: PropTypes.string,
     // title背景颜色，默认#ccc
