@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {divideViewArea, setTitle} from './SciLayoutLogic.js';
+import {divideViewArea, setTitle, setProportion, setSystemDisplay} from './SciLayoutLogic.js';
 
 function SciLayout(props) {
   return (
-    <section>
+    <section style={setSystemDisplay()}>
       {setTitle(props)}
-      <section style={divideViewArea(props)}>
-        {props.children}
+      <section style={setProportion()}>
+        <section style={divideViewArea(props)}>
+          {props.children}
+        </section>
       </section>
     </section>
   );
@@ -33,7 +35,9 @@ SciLayout.propTypes = {
     // title背景颜色，默认#ccc
     titleBgColor: PropTypes.string,
     // title文本颜色，默认#000
-    titleColor: PropTypes.string
+    titleColor: PropTypes.string,
+    // title字体大小，默认1.5rem
+    titleFontSize: PropTypes.string
 };
 
 export default SciLayout;
