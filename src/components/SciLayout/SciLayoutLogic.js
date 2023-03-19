@@ -31,7 +31,7 @@ export const divideViewArea = (props)=>{
 export const setProportion = ()=>{
     return {
         flexGrow: '1'
-    }
+    };
 }
 
 // 设置系统容器为flex布局

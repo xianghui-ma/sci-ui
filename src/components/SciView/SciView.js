@@ -18,6 +18,8 @@ function SciView(props) {
 SciView.propTypes = {
   // 视图位置，'起始行/终止行/起始列/终止列'
   position: PropTypes.string.isRequired,
+  // 该组件在Redux中的数据键名
+  reduxKey: PropTypes.string.isRequired,
   // 是否需要Title
   title: PropTypes.string,
   // title是否需要占用视图位置，true占用 | false不占用
