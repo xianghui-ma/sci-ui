@@ -1,24 +1,18 @@
-import {useRef} from 'react';
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Provider} from 'react-redux';
 
 import {divideViewArea, setTitle, setProportion, setSystemDisplay} from './SciLayoutLogic.js';
-import {buildContainerAndStore} from '../../container/SciView.js';
 
 function SciLayout(props) {
-  const storeRef = useRef(null);
   return (
-    <Provider store={storeRef.current}>
-      <section style={setSystemDisplay()}>
-        {setTitle(props)}
-        <section style={setProportion()}>
-          <section style={divideViewArea(props)}>
-            {buildContainerAndStore(props.children)}
-          </section>
+    <section style={setSystemDisplay()}>
+      {setTitle(props)}
+      <section style={setProportion()}>
+        <section style={divideViewArea(props)}>
+          {props.children}
         </section>
       </section>
-    </Provider>
+    </section>
   );
 }
 
