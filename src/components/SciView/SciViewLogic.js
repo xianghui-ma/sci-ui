@@ -19,14 +19,15 @@ export const setViewTitle = (props)=>{
 
 // 确定视图绘制区域位置
 export const setViewPosition = (props)=>{
-    let {position} = props;
+    let {position, viewBgColor} = props;
     position = position.split('/');
     return {
         gridColumn: `${Number(position[2])} / ${Number(position[3]) + 1}`,
         gridRow: `${Number(position[0])} / ${Number(position[1]) + 1}`,
         display: 'flex',
         flexDirection: 'column',
-        position: 'relative'
+        position: 'relative',
+        backgroundColor: viewBgColor || '#fff'
     }
 }
 

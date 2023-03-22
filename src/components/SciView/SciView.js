@@ -20,6 +20,8 @@ SciView.propTypes = {
   position: PropTypes.string.isRequired,
   // 该组件在Redux中的数据键名
   reduxKey: PropTypes.string.isRequired,
+  // 视图背景颜色，默认#fff
+  viewBgColor: PropTypes.string,
   // 是否需要Title
   title: PropTypes.string,
   // title是否需要占用视图位置，true占用 | false不占用
