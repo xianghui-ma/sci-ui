@@ -1,6 +1,6 @@
 {
   "name": "sci-ui",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "基于React的论文可视化系统UI组件库",
   "main": "lib/bundle.js",
   "scripts": {
@@ -20,8 +20,6 @@
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-redux": "^8.0.5",
-    "redux": "^4.2.1"
+    "react-dom": "^18.2.0"
   }
 }
