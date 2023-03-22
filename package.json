@@ -1,6 +1,6 @@
 {
   "name": "sci-ui",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "基于React的论文可视化系统UI组件库",
   "main": "lib/bundle.js",
   "scripts": {

@@ -18,8 +18,6 @@ function SciView(props) {
 SciView.propTypes = {
   // 视图位置，'起始行/终止行/起始列/终止列'
   position: PropTypes.string.isRequired,
-  // 该组件在Redux中的数据键名
-  reduxKey: PropTypes.string.isRequired,
   // 视图背景颜色，默认#fff
   viewBgColor: PropTypes.string,
   // 是否需要Title
