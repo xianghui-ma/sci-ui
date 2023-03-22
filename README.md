@@ -10,4 +10,4 @@
 ### 组件展示
 ***
 
-<img src="https://raw.githubusercontent.com/xianghui-ma/staticImage/master/sci-ui1.png"/>
+<img src="https://raw.githubusercontent.com/xianghui-ma/staticImage/master/sci-ui2.png"/>
